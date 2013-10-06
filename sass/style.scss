@@ -1,0 +1,77 @@
+@import "normalize";
+$base-color: #FF4F00;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+	// web safe list
+	// font-family: Verdana, Helvetica, Arial, sans-serif;
+	// font-family: Georgia, Serif;
+	// font-family: Tahoma, Geneva, sans-serif;
+	// font-family: "Arial Black", Gadget, sans-serif;
+	// font-family: "Times New Roman", Times, serif;
+	// font-family: copperplate,"Copperplate Gothic Light", sans-serif;
+	font-family: "Lucida Console", Monaco, monospace;
+	// font-family: "Gill Sans","Gill Sans MT", sans-serif;
+	// font-family: "Trebuchet MS", Helvetica, sans-serif;
+	// font-family: "Courier New", Courier, monospace;
+	// font-family: Impact, Charcoal, sans-serif;
+	// font-family: Arial, Helvetica, sans-serif;
+	// font-family: "Arial Narrow", sans-serif;
+	// font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	// font-family: Century Gothic, sans-serif;
+	// font-family: Verdana, Geneva, sans-serif;
+	background-color: #444; 
+}
+a {
+	text-decoration: none;
+	color: #35D699;
+	font-size: 18px;
+	display: block;
+	padding: 1px 5px;
+	text-shadow: 1px 1px 0px #1f1f1f;
+
+	&:hover {
+		
+		color: #FFC573;
+		background-color: #4D4D4D;
+
+	}
+}
+
+
+ul.project-list {
+
+	list-style: none;
+	margin:0;
+	padding: 0;
+	text-transform: uppercase;
+
+}
+
+
+@media only screen and ( min-width: 767px ){
+	
+	ul.project-list {
+
+		-moz-column-count:3; /* Firefox */
+		-webkit-column-count:3; /* Safari and Chrome */
+		column-count:3;
+
+	}
+	.wrap {
+		padding: 2em;
+
+	}
+}
+@media only screen and ( max-width: 767px ){
+
+	ul.project-list a {
+		background-color: #000;
+		font-size: 28px;
+		color: #35D699;
+	}
+
+}
