@@ -1,4 +1,5 @@
 @import "normalize";
+@import "forms";
 $base-color: #FF4F00;
 
 *, *:before, *:after {
@@ -13,7 +14,6 @@ body {
 	// font-family: "Arial Black", Gadget, sans-serif;
 	// font-family: "Times New Roman", Times, serif;
 	// font-family: copperplate,"Copperplate Gothic Light", sans-serif;
-	font-family: "Lucida Console", Monaco, monospace;
 	// font-family: "Gill Sans","Gill Sans MT", sans-serif;
 	// font-family: "Trebuchet MS", Helvetica, sans-serif;
 	// font-family: "Courier New", Courier, monospace;
@@ -23,7 +23,9 @@ body {
 	// font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	// font-family: Century Gothic, sans-serif;
 	// font-family: Verdana, Geneva, sans-serif;
-	background-color: #444; 
+	font-family: "Lucida Console", Monaco, monospace;
+	background-color: #444;
+	color: #FF4F00;
 }
 a {
 	text-decoration: none;
@@ -67,7 +69,9 @@ ul.project-list {
 	}
 }
 @media only screen and ( max-width: 767px ){
-
+	body {
+		background-color: #000;
+	}
 	ul.project-list a {
 		background-color: #000;
 		font-size: 28px;

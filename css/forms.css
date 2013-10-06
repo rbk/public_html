@@ -1,0 +1,13 @@
+/* line 1, ../sass/forms.scss */
+input[type=text] {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #5F5F5F;
+  color: #FFF;
+  padding: 5px;
+  outline: 0;
+}
+/* line 9, ../sass/forms.scss */
+input[type=text]:focus {
+  border: 1px solid #A7A7A7;
+}
