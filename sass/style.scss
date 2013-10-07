@@ -1,7 +1,8 @@
 @import "normalize";
 @import "forms";
-$base-color: #FF4F00;
-
+$base-color: #FF9500;
+$green: #35D699;
+$orange: #FF4F00;
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -24,27 +25,44 @@ body {
 	// font-family: Century Gothic, sans-serif;
 	// font-family: Verdana, Geneva, sans-serif;
 	font-family: "Lucida Console", Monaco, monospace;
-	background-color: #444;
+	background-color: #000;
 	color: #FF4F00;
 }
 a {
+	color: $green; 
 	text-decoration: none;
-	color: #35D699;
 	font-size: 18px;
-	display: block;
-	padding: 1px 5px;
-	text-shadow: 1px 1px 0px #1f1f1f;
+	text-shadow: 1px 1px 10px #1f1f1f;
+	// text-shadow: 1px 1px 14px rgb(146, 146, 146);
+	// text-shadow: 0px 0px 15px #C4C4C4;
 
 	&:hover {
-		
+		text-shadow: 1px 1px 10px #FFC573;
 		color: #FFC573;
-		background-color: #4D4D4D;
 
+	}
+}
+a.highlight-true {
+	text-shadow: 1px 1px 10px #FFC573;
+	color: #FFC573;
+}
+a.button {
+	padding: .5em 1em;
+	color: #EEE;
+	display: inline-block;
+	border: #eee;
+	background-color: rgba(53, 214, 153, .5);
+	&:hover {
+		background: $green;
 	}
 }
 
 
 ul.project-list {
+
+	li {
+		margin: 3px;
+	}
 
 	list-style: none;
 	margin:0;
@@ -53,6 +71,10 @@ ul.project-list {
 
 }
 
+	.wrap {
+		padding: 2em;
+
+	}
 
 @media only screen and ( min-width: 767px ){
 	
@@ -63,19 +85,10 @@ ul.project-list {
 		column-count:3;
 
 	}
-	.wrap {
-		padding: 2em;
-
-	}
 }
 @media only screen and ( max-width: 767px ){
-	body {
-		background-color: #000;
-	}
 	ul.project-list a {
-		background-color: #000;
-		font-size: 28px;
-		color: #35D699;
+		font-size: 28px !important;
 	}
 
 }

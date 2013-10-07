@@ -428,45 +428,71 @@ input[type=text]:focus {
   border: 1px solid #A7A7A7;
 }
 
-/* line 5, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 body {
   font-family: "Lucida Console", Monaco, monospace;
-  background-color: #444;
+  background-color: #000;
   color: #FF4F00;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 a {
+  color: #35d699;
   text-decoration: none;
-  color: #35D699;
   font-size: 18px;
-  display: block;
-  padding: 1px 5px;
-  text-shadow: 1px 1px 0px #1f1f1f;
+  text-shadow: 1px 1px 10px #1f1f1f;
 }
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 a:hover {
+  text-shadow: 1px 1px 10px #FFC573;
   color: #FFC573;
-  background-color: #4D4D4D;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
+a.highlight-true {
+  text-shadow: 1px 1px 10px #FFC573;
+  color: #FFC573;
+}
+
+/* line 49, ../sass/style.scss */
+a.button {
+  padding: .5em 1em;
+  color: #EEE;
+  display: inline-block;
+  border: #eee;
+  background-color: rgba(53, 214, 153, 0.5);
+}
+/* line 55, ../sass/style.scss */
+a.button:hover {
+  background: #35d699;
+}
+
+/* line 61, ../sass/style.scss */
 ul.project-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
+/* line 63, ../sass/style.scss */
+ul.project-list li {
+  margin: 3px;
+}
+
+/* line 74, ../sass/style.scss */
+.wrap {
+  padding: 2em;
+}
 
 @media only screen and (min-width: 767px) {
-  /* line 59, ../sass/style.scss */
+  /* line 81, ../sass/style.scss */
   ul.project-list {
     -moz-column-count: 3;
     /* Firefox */
@@ -474,22 +500,10 @@ ul.project-list {
     /* Safari and Chrome */
     column-count: 3;
   }
-
-  /* line 66, ../sass/style.scss */
-  .wrap {
-    padding: 2em;
-  }
 }
 @media only screen and (max-width: 767px) {
-  /* line 72, ../sass/style.scss */
-  body {
-    background-color: #000;
-  }
-
-  /* line 75, ../sass/style.scss */
+  /* line 90, ../sass/style.scss */
   ul.project-list a {
-    background-color: #000;
-    font-size: 28px;
-    color: #35D699;
+    font-size: 28px !important;
   }
 }

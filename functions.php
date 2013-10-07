@@ -9,6 +9,7 @@
 				$this->js_url = $this->path . $this->name .'/js';
 				$this->css_url = $this->path . $this->name .'/css';
 				$this->current_dir = '/home/'.$name.'/public_html/';
+				$this->images_dir = $this->path . $this->name . '/images';
 
 			}
 			public function get_current_directory(){
@@ -44,7 +45,8 @@
 							'name' 		 => $name, 
 							'url' 		 => $url,
 							'imageUrl' 	 => "",
-							'importance' => 0
+							'importance' => 18,
+							'highlight'	 => false
 						);
 						array_push( $json, $obj );
 					}
@@ -60,6 +62,12 @@
 				}
 				fwrite( $fh, json_encode( $json, JSON_PRETTY_PRINT) );
 				fclose($fh);
+			}
+			public function save_new_edits_json() {
+
+				// fwrite( $fh, json_encode( $json, JSON_PRETTY_PRINT) );
+				// fclose($fh);
+
 			}
 
 	}
