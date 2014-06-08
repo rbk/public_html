@@ -5,12 +5,12 @@
 			public function __construct( $name ) {
 
 				$this->name = $name;
-				$this->path = 'http://gurustudev.com/~' . $this->name . '/';
-				$this->js_url = $this->path . $this->name .'/js';
-				$this->css_url = $this->path . $this->name .'/css';
-				$this->current_dir = '/home/'.$name.'/public_html/';
-				$this->images_dir = $this->path . $this->name . '/images';
-
+				$this->path = './richard';
+				$this->js_url = $this->path .'/js';
+				$this->css_url = $this->path .'/css';
+				$this->current_dir = getcwd();
+				$this->images_dir = $this->path . '/images';
+				error_log( $this->current_dir);
 			}
 			public function get_current_directory(){
 
@@ -25,7 +25,7 @@
 				$items = $this->get_current_directory();
 				foreach( $items as $name ){
 					if( is_dir( $name ) ){
-						$url = $this->path.$name;
+						$url = 'localhost/' . $name;
 						echo '<a href="'.$url.'">'.$name.'</a>';
 					}
 				}
@@ -33,14 +33,14 @@
 			public function rewrite_json_file() {
 
 				$items = $this->get_current_directory();
-
+				ksort( $items ); 
 				// empty array to hold data we're about to loop through
 				$json = array();
 
 				foreach( $items as $name ){
 					if( is_dir( $name ) ){
 
-						$url = $this->path.$name;
+						$url = $name;
 						$obj = array(
 							'name' 		 => $name, 
 							'url' 		 => $url,
@@ -60,7 +60,7 @@
 					error_log( 'You may need to use "chown" to change the owner of the file to root aka the server.' );
 					exit();
 				}
-				fwrite( $fh, json_encode( $json, JSON_PRETTY_PRINT) );
+				fwrite( $fh, json_encode( $json ) );
 				fclose($fh);
 			}
 			public function save_new_edits_json() {

@@ -2,7 +2,7 @@
 
 	require_once( './richard/functions.php' );
 	$projects = new Projects('richard');
-	if( $_GET['refresh'] ){
+	if( isset($_GET['refresh']) ){
 		$projects->rewrite_json_file();
 	}
 
@@ -17,18 +17,18 @@
 	<script src="<?php echo $projects->js_url; ?>/app.js"></script>
 	<style>
 		body {
-			background: url( <?php echo $projects->images_dir; ?>/backgrounds/fundo.png );
-			/*background-size: cover;*/
+			background: url( <?php echo $projects->images_dir; ?>/backgrounds/tweed.png );
 		}
 	</style>
 </head>
 	<body ng-controller="projects">
 		<div class="wrap">
-			<form><input type="text" placeholder="SEARCH" ng-model="query"></form><br/>
+			<form><input type="text" ng-model="query"></form><br/>
 
 
 			<ul class="project-list">
-				<li ng-repeat="project in projects | filter:query">
+				<li class="flipInX animated"><a href="http://localhost:3000">localhost:3000</a></li>
+				<li class="flipInX animated" ng-repeat="project in projects | filter:query">
 					<!-- <span class="" ng-model="importance"></span> -->
 					<!-- <a href="" class="subtract" ng-click="minusOne($index)">-</a> -->
 					<a class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>

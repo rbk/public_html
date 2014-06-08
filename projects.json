@@ -147,6 +147,13 @@
         "highlight": false
     },
     {
+        "name": "Phillipe Gorbeau",
+        "url": "http:\/\/gurustudev.com\/~richard\/gorbeau",
+        "imageUrl": "",
+        "importance": 18,
+        "highlight": true
+    },
+    {
         "name": "grannys",
         "url": "http:\/\/gurustudev.com\/~richard\/grannys",
         "imageUrl": "",
@@ -312,7 +319,7 @@
         "url": "http:\/\/gurustudev.com\/~richard\/pettys",
         "imageUrl": "",
         "importance": 18,
-        "highlight": true
+        "highlight": false
     },
     {
         "name": "phoenix",
@@ -366,6 +373,13 @@
     {
         "name": "richard",
         "url": "http:\/\/gurustudev.com\/~richard\/richard",
+        "imageUrl": "",
+        "importance": 18,
+        "highlight": false
+    },
+    {
+        "name": "roast",
+        "url": "http:\/\/gurustudev.com\/~richard\/roast",
         "imageUrl": "",
         "importance": 18,
         "highlight": false
