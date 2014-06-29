@@ -1,7 +1,7 @@
 <?php
 
-	require_once( './richard/functions.php' );
-	$projects = new Projects('richard');
+	require_once( './index/functions.php' );
+	$projects = new Projects('index');
 	if( isset($_GET['refresh']) ){
 		$projects->rewrite_json_file();
 	}
@@ -10,7 +10,7 @@
 <!DOCtype html>
 <html lang="EN" ng-app>
 <head>
-	<title>Richards Public Html Folder</title>
+	<title>Public Html Folder</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $projects->css_url;?>/style.css" media="all" />
 	<script src="<?php echo $projects->js_url; ?>/angular.js"></script>

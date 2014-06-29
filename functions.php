@@ -5,12 +5,12 @@
 			public function __construct( $name ) {
 
 				$this->name = $name;
-				$this->path = './richard';
+				$this->path = './index';
 				$this->js_url = $this->path .'/js';
 				$this->css_url = $this->path .'/css';
 				$this->current_dir = getcwd();
 				$this->images_dir = $this->path . '/images';
-				error_log( $this->current_dir);
+				// error_log( 'Current directory: ' . $this->current_dir);
 			}
 			public function get_current_directory(){
 
