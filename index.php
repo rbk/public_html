@@ -2,9 +2,9 @@
 
 	require_once( './index/functions.php' );
 	$projects = new Projects('index');
-	if( isset($_GET['refresh']) ){
+	// if( isset($_GET['refresh']) ){
 		$projects->rewrite_json_file();
-	}
+	// }
 
 ?>
 <!DOCtype html>
@@ -15,11 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $projects->css_url;?>/style.css" media="all" />
 	<script src="<?php echo $projects->js_url; ?>/angular.js"></script>
 	<script src="<?php echo $projects->js_url; ?>/app.js"></script>
-	<style>
-		body {
-			background: url( <?php echo $projects->images_dir; ?>/backgrounds/tweed.png );
-		}
-	</style>
 </head>
 	<body ng-controller="projects">
 		<div class="wrap">

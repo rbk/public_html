@@ -5,7 +5,6 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Righteous);
 /* line 22, ../sass/normalize.scss */
 article,
 aside,
@@ -4190,18 +4189,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: zoomOutUp;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 body {
+  background: url(../images/backgrounds/fundo.png) 0 0;
   font-family: "Courier New", Courier, monospace;
   font-family: Century Gothic, sans-serif;
-  font-family: 'Righteous', cursive;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: copperplate,"Copperplate Gothic Light", sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Georgia, Serif;
+  font-family: Impact, Charcoal, sans-serif;
   background-color: #000;
   color: #FF4F00;
 }
@@ -4210,27 +4217,26 @@ body {
 a {
   text-decoration: none;
   font-size: 28px;
+  font-size: 38px;
   line-height: 1;
-  color: #CCB24A;
-  text-shadow: 0px 4px 1px #494848;
+  color: #fff;
 }
 /* line 44, ../sass/style.scss */
 a:hover {
-  color: #FFE990;
+  color: #FF5200;
 }
 /* line 47, ../sass/style.scss */
 a:active {
-  text-shadow: 0px 0px 1px #494848;
-  color: #81743E;
+  color: #FF5200;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 a.highlight-true {
   text-shadow: 1px 1px 10px #FFC573;
   color: #FFC573;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 a.button {
   padding: .5em 1em;
   color: #EEE;
@@ -4238,36 +4244,36 @@ a.button {
   border: #eee;
   background-color: rgba(53, 214, 153, 0.5);
 }
-/* line 62, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 a.button:hover {
   background: #35d699;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 input[type=text] {
-  background-color: #4E4E4E;
-  color: #eee;
+  background-color: #000;
+  color: #fff;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 ul.project-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-transform: capitalize;
 }
-/* line 73, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 ul.project-list li {
   margin: 3px;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .wrap {
   padding: 2em;
 }
 
 @media only screen and (min-width: 767px) {
-  /* line 91, ../sass/style.scss */
+  /* line 90, ../sass/style.scss */
   ul.project-list {
     -moz-column-count: 3;
     /* Firefox */
@@ -4277,7 +4283,7 @@ ul.project-list li {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 100, ../sass/style.scss */
+  /* line 99, ../sass/style.scss */
   ul.project-list a {
     font-size: 28px !important;
   }
