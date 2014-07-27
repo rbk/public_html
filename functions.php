@@ -46,7 +46,8 @@
 							'url' 		 => $url,
 							'imageUrl' 	 => "",
 							'importance' => 18,
-							'highlight'	 => false
+							'highlight'	 => false,
+							'animation' => $this->insert_random_animation( )
 						);
 						array_push( $json, $obj );
 					}
@@ -67,6 +68,17 @@
 
 				// fwrite( $fh, json_encode( $json, JSON_PRETTY_PRINT) );
 				// fclose($fh);
+
+			}
+			private function insert_random_animation( ){
+				$animations = array("bounce", "flash", "pulse", "rubberBand", "shake", "swing", "tada", "wobble", 
+					"bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", 
+					"fadeIn", "fadeInDown", "fadeInDownBig", "fadeInLeft", "fadeInLeftBig", "fadeInRight", 
+					"fadeInRightBig", "fadeInUp", "fadeInUpBig", "flip", "flipInX", "flipInY", "lightSpeedIn", 
+					"rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "rollIn", 
+					"zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp");
+				// return $animations[ rand( 0, count($animations) ) ];
+				return '';
 
 			}
 

@@ -35,24 +35,27 @@ body {
 	color: #FF4F00;
 
 }
+// a {
+// 	text-decoration: none;
+// 	font-size: 28px;
+// 	font-size: 38px;
+// 	line-height: 1;
+// 	color: #fff;
+// 	&:hover {
+// 		color: #FF5200;
+// 	}
+// 	&:active {
+// 		color: #FF5200;
+// 	}
+// }
+// a.highlight-true {
+// 	text-shadow: 1px 1px 10px #FFC573;
+// 	color: #FFC573;
+// }
 a {
+	width: 100%;
 	text-decoration: none;
 	font-size: 28px;
-	font-size: 38px;
-	line-height: 1;
-	color: #fff;
-	&:hover {
-		color: #FF5200;
-	}
-	&:active {
-		color: #FF5200;
-	}
-}
-a.highlight-true {
-	text-shadow: 1px 1px 10px #FFC573;
-	color: #FFC573;
-}
-a.button {
 	padding: .5em 1em;
 	color: #EEE;
 	display: inline-block;

@@ -24,15 +24,15 @@
 			<ul class="project-list">
 				<li class="flipInX animated"><a href="http://localhost:3000">localhost:3000</a></li>
 				<li class="flipInX animated" ng-repeat="project in projects | filter:query">
+					<a class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>
 					<!-- <span class="" ng-model="importance"></span> -->
 					<!-- <a href="" class="subtract" ng-click="minusOne($index)">-</a> -->
-					<a class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>
 				</li>
 			</ul>
 			<br/>
 			<nav>
-				<!-- <a href="#" class="mode button" ng-model="mode" ng-click="toggleEditMode()">{{modeText}}</a> -->
-				<?php //echo '<a href="'. $project->path. '?refresh=true" class="button">Reset</a>'; ?>
+				<a href="#" class="mode button" ng-model="mode" ng-click="toggleEditMode()">{{modeText}}</a>
+				<?php echo '<a href="'. $project->path. '?refresh=true" class="button">Reset</a>'; ?>
 			</nav>
 
 		</div>
