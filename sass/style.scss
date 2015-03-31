@@ -11,60 +11,17 @@ $fontColor: #FFF;
 }
 
 body {
-
+	
 	background: url(../images/backgrounds/fundo.png) 0 0;
-	// web safe list
-	font-family: "Courier New", Courier, monospace;
-	font-family: Century Gothic, sans-serif;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-family: "Times New Roman", Times, serif;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-family: copperplate,"Copperplate Gothic Light", sans-serif;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-family: Georgia, Serif;
-	font-family: Impact, Charcoal, sans-serif;
-	// font-family: Arial, Helvetica, sans-serif;
-	// font-family: "Arial Narrow", sans-serif;
-	// font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	// font-family: Verdana, Geneva, sans-serif;
-	// font-family: "Lucida Console", Monaco, monospace;
-	// font-family: "Gill Sans","Gill Sans MT", sans-serif;
-	// font-weight: 900;
+	background: url(../images/backgrounds/cool-bg.png) 0 0;
+
+	font-family: 'Open Sans', sans-serif;
 	background-color: #000;
+	font-weight: 100;
 	color: #FF4F00;
 
 }
-// a {
-// 	text-decoration: none;
-// 	font-size: 28px;
-// 	font-size: 38px;
-// 	line-height: 1;
-// 	color: #fff;
-// 	&:hover {
-// 		color: #FF5200;
-// 	}
-// 	&:active {
-// 		color: #FF5200;
-// 	}
-// }
-// a.highlight-true {
-// 	text-shadow: 1px 1px 10px #FFC573;
-// 	color: #FFC573;
-// }
-a {
-	width: 100%;
-	text-decoration: none;
-	font-size: 28px;
-	padding: .5em 1em;
-	color: #EEE;
-	display: inline-block;
-	border: #eee;
-	background-color: rgba(53, 214, 153, .5);
-	&:hover {
-		background: $green;
-	}
-}
+
 input[type=text]{
 	background-color: #000;
 	color: #fff;
@@ -72,14 +29,27 @@ input[type=text]{
 
 ul.project-list {
 
-	li {
-		margin: 3px;
-	}
-
 	list-style: none;
 	margin:0;
 	padding: 0;
 	text-transform: capitalize;
+	li {
+		margin: 3px;
+	}
+	a {
+		width: 100%;
+		text-decoration: none;
+		font-size: 18px;
+		padding: 3px 10px;
+		color: #EEE;
+		display: inline-block;
+		border: #eee;
+		background-color: rgba(53, 214, 153, .5);
+		&:hover {
+			background: $green;
+		}
+	}
+
 
 }
 
@@ -92,9 +62,9 @@ ul.project-list {
 	
 	ul.project-list {
 
-		-moz-column-count:3; /* Firefox */
-		-webkit-column-count:3; /* Safari and Chrome */
-		column-count:3;
+		-moz-column-count:4; /* Firefox */
+		-webkit-column-count:4; /* Safari and Chrome */
+		column-count:4;
 
 	}
 }
@@ -103,4 +73,17 @@ ul.project-list {
 		font-size: 28px !important;
 	}
 
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,.8);
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
 }
