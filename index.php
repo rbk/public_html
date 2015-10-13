@@ -20,7 +20,7 @@
 </head>
 	<body ng-controller="projects">
 		<div class="wrap">
-			<form><input type="text" ng-model="query"></form><br/>
+			<form><input type="text" autofocus ng-model="query"></form><br/>
 			<ul class="project-list">
 				<li class="project animated lightSpeedIn" ng-repeat="project in projects | filter:query">
 					<a class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>
