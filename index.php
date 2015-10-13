@@ -22,14 +22,13 @@
 		<div class="wrap">
 			<form><input type="text" ng-model="query"></form><br/>
 			<ul class="project-list">
-				<li class=""><a href="http://localhost:3000">localhost:3000</a></li>
 				<li class="project" ng-repeat="project in projects | filter:query">
 					<a class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>
 				</li>
 			</ul>
 		</div>
 		<footer>
-			<small>Copyright 2015 <a href="http://richardkeller.net" target="_blank">richardkeller.net</a></small>
+			<small>2015 <a href="http://richardkeller.net" target="_blank">richardkeller.net</a></small>
 		</footer>
 	</body>
 </html>
