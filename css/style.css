@@ -5,6 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Kaushan+Script|Permanent+Marker);
 /* line 11, ../sass/normalize.scss */
 article,
 aside,
@@ -3413,14 +3414,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: zoomOutUp;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 body {
   background: url(../images/backgrounds/fundo.png) 0 0;
   font-family: 'Open Sans', sans-serif;
@@ -3429,48 +3430,49 @@ body {
   color: #FF4F00;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 input[type=text] {
   background-color: #000;
   color: #fff;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 ul.project-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-transform: capitalize;
 }
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 ul.project-list li {
   margin: 3px;
 }
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 ul.project-list a {
   outline: 0;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
   width: 100%;
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 10px;
   color: #EEE;
   display: inline-block;
   border: #eee;
-  background-color: rgba(195, 33, 33, 0.49);
+  font-family: 'Kaushan Script', cursive;
+  font-size: 41px;
 }
-/* line 50, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 ul.project-list a:hover, ul.project-list a:focus {
-  background-color: rgba(195, 33, 33, 0.8);
+  color: rgba(195, 33, 33, 0.8);
+  text-shadow: 1px 1px 0px #fff;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .wrap {
   padding: 2em;
 }
 
 @media only screen and (min-width: 767px) {
-  /* line 65, ../sass/style.scss */
+  /* line 72, ../sass/style.scss */
   ul.project-list {
     -moz-column-count: 3;
     /* Firefox */
@@ -3480,12 +3482,12 @@ ul.project-list a:hover, ul.project-list a:focus {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 74, ../sass/style.scss */
+  /* line 81, ../sass/style.scss */
   ul.project-list a {
     font-size: 28px !important;
   }
 }
-/* line 79, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -3495,7 +3497,7 @@ footer {
   text-align: center;
   color: #fff;
 }
-/* line 87, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 footer a {
   color: #fff;
   text-decoration: none;
