@@ -13,19 +13,21 @@ $fontColor: #FFF;
 
 body {
 	
-	background: url(../images/backgrounds/fundo.png) 0 0;
-	// background: url(../images/backgrounds/cool-bg.png) 0 0;
+	// background: url(../images/backgrounds/fundo.png) 0 0;
+	background: url(../images/backgrounds/cool-bg.png) 0 0;
 
 	font-family: 'Open Sans', sans-serif;
 	background-color: #000;
 	font-weight: 100;
 	color: #FF4F00;
+	padding-bottom: 50px;
 
 }
 
 input[type=text]{
 	background-color: #000;
 	color: #fff;
+	font-family: courier;
 }
 
 ul.project-list {
@@ -50,7 +52,7 @@ ul.project-list {
 		// background-color: rgba(195, 33, 33, 0.49);
 
 		font-family: 'Kaushan Script', cursive;
-		font-size: 41px;
+		font-size: 32px;
 
 		&:hover, &:focus {
 			// background-color: rgba(195, 33, 33, 0.8);
@@ -84,7 +86,7 @@ ul.project-list {
 
 }
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background-color: rgba(0,0,0,.8);
