@@ -11,6 +11,11 @@ This is really just a directory scraper that adds a text filter. It is responsiv
 
 `git clone git@github.com:richardbenjamin/public_html.git index`
 
-2. copy index.php to public_html folder
-3. Create a projects.json file in the public_html folder that is writable by the server.
+## Option 1
 
+- copy index.php to public_html folder
+- Create a projects.json file in the public_html folder that is writable by the server.
+
+## Option 2
+
+`cd ~/public_html/index && . setup.sh`
