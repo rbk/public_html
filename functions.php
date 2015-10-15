@@ -25,8 +25,10 @@
 				$items = $this->get_current_directory();
 				foreach( $items as $name ){
 					if( is_dir( $name ) ){
-						$url = 'localhost/' . $name;
-						echo '<a href="'.$url.'">'.$name.'</a>';
+						if($name != 'index') {
+							$url = 'localhost/' . $name;
+							echo '<a href="'.$url.'">'.$name.'</a>';
+						}
 					}
 				}
 			}
@@ -39,17 +41,18 @@
 
 				foreach( $items as $name ){
 					if( is_dir( $name ) ){
-
-						$url = $name;
-						$obj = array(
-							'name' 		 => $name, 
-							'url' 		 => $url,
-							'imageUrl' 	 => "",
-							'importance' => 18,
-							'highlight'	 => false,
-							'animation' => $this->insert_random_animation( )
-						);
-						array_push( $json, $obj );
+						if($name != 'index') {
+							$url = $name;
+							$obj = array(
+								'name' 		 => $name, 
+								'url' 		 => $url,
+								'imageUrl' 	 => "",
+								'importance' => 18,
+								'highlight'	 => false,
+								'animation' => $this->insert_random_animation( )
+							);
+							array_push( $json, $obj );
+						}
 					}
 
 				}
