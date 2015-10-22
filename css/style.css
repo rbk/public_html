@@ -5,7 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(https://fonts.googleapis.com/css?family=Pacifico|Kaushan+Script|Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 /* line 11, ../sass/normalize.scss */
 article,
 aside,
@@ -3424,7 +3424,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* line 14, ../sass/style.scss */
 body {
   background: url(../images/backgrounds/cool-bg.png) 0 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   background-color: #000;
   font-weight: 100;
   color: #FF4F00;
@@ -3433,48 +3433,81 @@ body {
 
 /* line 27, ../sass/style.scss */
 input[type=text] {
-  background-color: #000;
+  background-color: #222;
   color: #fff;
-  font-family: courier;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 22px;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 ul.project-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-transform: capitalize;
 }
-/* line 39, ../sass/style.scss */
-ul.project-list li {
-  margin: 3px;
+/* line 41, ../sass/style.scss */
+ul.project-list li.project {
+  margin: 3px auto;
+  position: relative;
 }
-/* line 42, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
+ul.project-list li.project:hover a {
+  color: #ddd;
+  border-color: #508c76;
+}
+/* line 55, ../sass/style.scss */
+ul.project-list .menu-container {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ddd;
+}
+/* line 61, ../sass/style.scss */
+ul.project-list .toggle-menu {
+  height: 28px;
+  width: 30px;
+  text-align: center;
+}
+/* line 65, ../sass/style.scss */
+ul.project-list .toggle-menu i {
+  position: relative;
+  top: 5px;
+}
+/* line 67, ../sass/style.scss */
+ul.project-list .menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 28px;
+}
+/* line 72, ../sass/style.scss */
+ul.project-list .menu div {
+  background-color: #3C3C3C;
+  padding: 1px 5px;
+}
+/* line 78, ../sass/style.scss */
 ul.project-list a {
   outline: 0;
-  transition: all .2s ease-in-out;
   width: 100%;
   text-decoration: none;
   font-size: 18px;
-  color: #EEE;
+  padding: 1px 5px;
   display: inline-block;
-  border: #eee;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 32px;
-}
-/* line 57, ../sass/style.scss */
-ul.project-list a:hover, ul.project-list a:focus {
-  color: rgba(195, 33, 33, 0.8);
-  text-shadow: 1px 1px 0px #fff;
+  border: 2px solid transparent;
+  color: #999;
+  font-size: 22px;
+  font-weight: 100;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .wrap {
   padding: 2em;
 }
 
 @media only screen and (min-width: 767px) {
-  /* line 74, ../sass/style.scss */
+  /* line 102, ../sass/style.scss */
   ul.project-list {
     -moz-column-count: 3;
     /* Firefox */
@@ -3484,23 +3517,23 @@ ul.project-list a:hover, ul.project-list a:focus {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 83, ../sass/style.scss */
+  /* line 112, ../sass/style.scss */
   ul.project-list a {
-    font-size: 28px !important;
+    font-size: 28px;
   }
 }
-/* line 88, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #222;
   padding: 5px;
   text-align: center;
   color: #fff;
 }
-/* line 96, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 footer a {
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
 }
