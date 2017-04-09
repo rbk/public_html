@@ -2,8 +2,7 @@
 
 This is really just a directory scraper that adds a text filter. It is responsive and looks cool. I use it for my public_html directory in apache rather than the default index.
 
-![Screenshot]
-(https://github.com/richardbenjamin/public_html/blob/master/images/index.png)
+![Screenshot](https://github.com/richardbenjamin/public_html/blob/master/images/index.png)
 
 # Setup Instructions
 
