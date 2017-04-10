@@ -1,0 +1,46 @@
+/**
+* This is generated from the index file. By default only directories are listed.
+* The highlight, animation, importance fields are not currently used.
+*/
+[
+  {
+    "animation": "",
+    "highlight": false,
+    "imageUrl": "",
+    "importance": 18,
+    "name": "PPD_940x300",
+    "url": "PPD_940x300"
+  },
+  {
+    "animation": "",
+    "highlight": false,
+    "imageUrl": "",
+    "importance": 18,
+    "name": "bash",
+    "url": "bash"
+  },
+  {
+    "animation": "",
+    "highlight": false,
+    "imageUrl": "",
+    "importance": 18,
+    "name": "keyword-migration_files",
+    "url": "keyword-migration_files"
+  },
+  {
+    "animation": "",
+    "highlight": false,
+    "imageUrl": "",
+    "importance": 18,
+    "name": "stage-km-output_files",
+    "url": "stage-km-output_files"
+  },
+  {
+    "animation": "",
+    "highlight": false,
+    "imageUrl": "",
+    "importance": 18,
+    "name": "testing",
+    "url": "testing"
+  }
+]
