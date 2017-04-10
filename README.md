@@ -6,7 +6,9 @@ This is really just a directory scraper that adds a text filter. It is responsiv
 
 # Setup Instructions
 
-1. Clone into `public_html` or `var/www/html` folder with name index
+1. Clone into `public_html` or `var/www/html` folder with name index. This folder should be the document root exposed via your apache or nginx server.
+
+2. Choose option 1 or 2
 
 `git clone git@github.com:richardbenjamin/public_html.git index`
 
