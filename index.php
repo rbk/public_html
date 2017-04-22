@@ -23,7 +23,7 @@
 			<form><input type="text" autofocus ng-model="query"></form><br/>
 			<ul class="project-list">
 				<li class="project animated" ng-repeat="project in projects | filter:query">
-					<a target="_blank" class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>
+					<a class="highlight-{{project.highlight}}" href="{{project.url}}">{{project.name}}</a>
 				</li>
 			</ul>
 		</div>
